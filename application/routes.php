@@ -34,8 +34,22 @@
 
 Route::get('/', function()
 {
-	return View::make('home.index');
+	//return View::make('home.index');
+        return View::make('home.child');
+
 });
+Route::get('admin', function()
+{
+	return View::make('admin.master');
+
+});
+
+
+/*Route::get('test', function()
+{
+	return View::make('home.index');
+        
+});*/
 
 /*
 |--------------------------------------------------------------------------

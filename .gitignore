@@ -6,12 +6,20 @@
 *.rej
 *.swo
 *.swp
+<<<<<<< HEAD
+=======
+*.zip
+>>>>>>> 857b8fb8be81178d14f59c126c1381b09aff7c0f
 *.vi
 *~
 *.sass-cache
 
 # OS or Editor folders
 .DS_Store
+<<<<<<< HEAD
+=======
+._*
+>>>>>>> 857b8fb8be81178d14f59c126c1381b09aff7c0f
 Thumbs.db
 .cache
 .project
@@ -19,10 +27,15 @@ Thumbs.db
 .tmproj
 *.esproj
 nbproject
+<<<<<<< HEAD
 
 # Dreamweaver added files
 _notes
 dwsync.xml
+=======
+*.sublime-project
+*.sublime-workspace
+>>>>>>> 857b8fb8be81178d14f59c126c1381b09aff7c0f
 
 # Komodo
 *.komodoproject
@@ -32,6 +45,11 @@ dwsync.xml
 .hg
 .svn
 .CVS
+<<<<<<< HEAD
 intermediate
 publish
 .idea
+=======
+.idea
+node_modules
+>>>>>>> 857b8fb8be81178d14f59c126c1381b09aff7c0f
