@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Shutter Admin</title>
+    <title>  @section('title') Shuttr 
+        @yield_section </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -44,7 +45,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Project name</a>
+          <a class="brand" href="<?php echo URL::to('admin') ?>">
+               @section('title') Shuttr 
+        @yield_section
+             </a>
           <div class="btn-group pull-right">
             <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
               <i class="icon-user"></i> Username
@@ -74,29 +78,17 @@
             <ul class="nav nav-list">
               <li class="nav-header">Sidebar</li>
               <li class="active"><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
               @section('navigation')
               
               
                 @yield_section
-              
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="nav-header">Sidebar</li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
+              </ul>
           </div><!--/.well -->
         </div><!--/span-->
         <div class="span9">
           <div class="hero-unit">
             <h1>Welcome</h1>
-            
             
             
             
@@ -140,10 +132,15 @@
             </div><!--/span-->
           </div><!--/row-->
         </div><!--/span-->
+           * */ ?>
+           
       </div><!--/row-->
-
+     @section('content')
+            
+     @yield_section
+       
       <hr>
-*/ ?>
+
       <footer>
         <p>&copy; Company 2012</p>
       </footer>
